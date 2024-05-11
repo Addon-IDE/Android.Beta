@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="160dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/colorMainPrimary" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorMainPrimary"
+        android:id="@+id/button_layout">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorDefaultFont"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

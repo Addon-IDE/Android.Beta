@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorVicePrimary">
+
+    <com.mcyizy.android.widget.ToolbarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="@color/colorMainPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center|left"
+            android:id="@+id/switch_button"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜间主题"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDefaultFont"
+                android:id="@+id/switch_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(点击切换)"
+                android:textColor="@color/colorDefaultHintFont"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center|left"
+            android:id="@+id/switch_add"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建颜色键"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDefaultFont" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center|left"
+            android:id="@+id/switch_font"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="字体"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDefaultFont" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorMainPrimary">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:id="@+id/list_view" />
+
+    </LinearLayout>
+
+</LinearLayout>

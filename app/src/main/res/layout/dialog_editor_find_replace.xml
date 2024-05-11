@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center|left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找替换"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorDefaultFont" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="90dp">
+
+            <EditText
+                android:id="@+id/find_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text=""
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorDefaultFont"
+                android:textColorHint="@color/colorDefaultHintFont"
+                android:hint="请输入..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|right">
+
+            <LinearLayout
+                android:id="@+id/botton_up"
+                android:orientation="vertical"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow_up"
+                        app:tint="@color/colorDefaultIcon"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/botton_down"
+                android:orientation="vertical"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow_down"
+                        app:tint="@color/colorDefaultIcon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="90dp">
+
+            <EditText
+                android:id="@+id/replace_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text=""
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorDefaultFont"
+                android:textColorHint="@color/colorDefaultHintFont"
+                android:hint="请输入..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|right">
+
+            <LinearLayout
+                android:id="@+id/botton_replace"
+                android:orientation="vertical"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="替换"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorDefaultFont" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/botton_replaceall"
+                android:orientation="vertical"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorDefaultFont" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <CheckBox
+            android:text="正则表达式"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regular_expression"
+            android:textColor="@color/colorDefaultFont" />
+
+        <CheckBox
+            android:text="整个单词"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/whole_word"
+            android:textColor="@color/colorDefaultFont" />
+
+        <CheckBox
+            android:text="忽略大小写"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ignore_case"
+            android:textColor="@color/colorDefaultFont" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/botton_off"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textSize="15sp"
+            android:textColor="@color/colorDefaultFont" />
+
+    </LinearLayout>
+
+</LinearLayout>

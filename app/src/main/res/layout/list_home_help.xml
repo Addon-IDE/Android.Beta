@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginRight="80dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon" 
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@android:mipmap/sym_def_app_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文本框"
+                    android:textColor="@color/colorDefaultFont"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:layout_marginBottom="1dp" />
+
+                <TextView
+                    android:id="@+id/describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文本框"
+                    android:textSize="11sp"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

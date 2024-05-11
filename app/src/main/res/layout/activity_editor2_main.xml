@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorVicePrimary">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Addon Editor"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorDefaultFont"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前为测试版本可能不稳定"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|right">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/colorMainPrimary" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:id="@+id/main_help"
+                        android:background="@drawable/androidfive_water_ripple">
+
+                        <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@android:mipmap/sym_def_app_icon" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_marginRight="20dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/colorMainPrimary">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:id="@+id/main_signout"
+                        android:background="@drawable/androidfive_water_ripple">
+
+                        <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@android:mipmap/sym_def_app_icon" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:background="@color/colorVicePrimary"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:id="@+id/shortcut_list"
+                android:focusableInTouchMode="false"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
+                    </com.google.android.material.tabs.TabLayout>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+             android:layout_height="fill_parent"
+             android:layout_width="fill_parent"
+             android:orientation="vertical"
+             android:background="@color/colorVicePrimary"
+             android:id="@+id/view_pager" />
+
+    </LinearLayout>
+
+</RelativeLayout>

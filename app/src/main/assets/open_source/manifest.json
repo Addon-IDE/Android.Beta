@@ -1,0 +1,65 @@
+[
+    {
+        "name": "DayNightSwitch",
+        "author": "Mahfa",
+        "describe": "a cute day night switch for android",
+        "version": "1.5",
+        "url": "https://github.com/Mahfa/DayNightSwitch",
+        "agreement": "",
+        "time": "Feb 6, 2021"
+    },
+    {
+        "name": "sora-editor",
+        "author": "Rosemoe",
+        "describe": "sora-editor是一款高效的安卓代码编辑器",
+        "version": "0.22.1",
+        "url": "https://github.com/Rosemoe/sora-editor",
+        "agreement": "LGPL/sora-editor.txt",
+        "time": "Aug 24, 2023"
+    },
+    {
+        "name": "AndroidTreeView",
+        "author": "bmelnychuk",
+        "describe": "About AndroidTreeView. TreeView implementation for android",
+        "version": "1.0",
+        "url": "https://github.com/bmelnychuk/AndroidTreeView",
+        "agreement": "Apache/LICENSE",
+        "time": "Feb 9, 2022"
+    },
+    {
+        "name": "Toasty",
+        "author": "GrenderG",
+        "describe": "The usual Toast, but with steroids 💪",
+        "version": "1.5.2",
+        "url": "https://github.com/GrenderG/Toasty",
+        "agreement": "LGPL/toasty.txt",
+        "time": "Sep 6, 2021"
+    },
+    {
+        "name": "ColorPicker",
+        "author": "QuadFlask",
+        "describe": "🍭color picker for android",
+        "version": "0.0.15",
+        "url": "https://github.com/QuadFlask/colorpicker",
+        "agreement": "Apache/color_picker.txt",
+        "time": "Nov 7, 2019"
+    },
+    {
+        "name": "SwitchButton",
+        "author": "zcweng",
+        "describe": "AboutSwitchButton.An beautiful+lightweight+custom-style-easy switch widget for Android,minSdkVersion >= 11",
+        "version": "0.0.3",
+        "url": "https://github.com/zcweng/SwitchButton",
+        "agreement": "MIT/switch_button.txt",
+        "time": "Jun 15, 2023"
+    },
+    {
+        "name": "",
+        "author": "",
+        "describe": "",
+        "version": "",
+        "url": "",
+        "agreement": "",
+        "time": ""
+    }
+]

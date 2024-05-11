@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorMainPrimary">
+
+        <LinearLayout
+                android:id="@+id/list_component"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="4dp"
+                        android:layout_height="15dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardBackgroundColor="@android:color/holo_red_dark"
+                        app:cardCornerRadius="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文本框"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDefaultFont"
+                        android:singleLine="true"
+                        android:id="@+id/title_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:src="@drawable/ic_menu2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        app:tint="@color/colorDefaultIcon"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#E8E8E8" />
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文本框"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/colorDefaultFont"
+                    android:id="@+id/title_describe" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#E8E8E8" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="版本：1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDefaultHintFont"
+                        android:singleLine="true"
+                        android:id="@+id/title_version" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作者：Addon IDE"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDefaultHintFont"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:id="@+id/title_author" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

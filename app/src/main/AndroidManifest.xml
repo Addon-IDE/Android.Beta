@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 权限 -->
+    
+    <!-- 软件配置 -->
+    <application 
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher" 
+        android:roundIcon="@mipmap/ic_launcher" 
+        android:label="@string/app_name" 
+        android:supportsRtl="true" 
+        android:theme="@style/AppTheme">
+        <!-- 主活动 -->
+        <activity 
+            android:name="MainActivity" 
+            android:exported="true" >
+            <intent-filter>
+                <action 
+                    android:name="android.intent.action.MAIN" />
+                <category 
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页 -->
+        <activity 
+            android:name="com.mcyizy.addonide.HomeActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 主页手册 -->
+        <activity 
+            android:name="com.mcyizy.addonide.home.manual.MainActivity" 
+            android:exported="false" >
+        </activity>
+        <activity 
+            android:name="com.mcyizy.addonide.home.manual.ManualEditorActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 音乐可视化 -->
+        <activity 
+            android:name="com.mcyizy.addonide.home.audiovisualize.AudioVisualizeActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- FontGen -->
+        <activity 
+            android:name="com.mcyizy.addonide.home.fontgen.MainActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+         <activity 
+            android:name="com.mcyizy.addonide.home.fontgen.LicenseActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- Unity -->
+        <activity 
+            android:name="com.mcyizy.addonide.home.unity.UnityActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 主页搜索 -->
+        <activity 
+            android:name="com.mcyizy.addonide.HomeSearchActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 创建 -->
+        <activity 
+            android:name="com.mcyizy.addonide.CreateActivity" 
+            android:exported="false" >
+        </activity>
+        <activity 
+            android:name="com.mcyizy.addonide.CreateTypeActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 插件 -->
+        <activity 
+            android:name="com.mcyizy.addonide.PluginActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 设置 -->
+        <activity 
+            android:name="com.mcyizy.addonide.SettingActivity" 
+            android:exported="false" >
+        </activity>
+        <activity 
+            android:name="com.mcyizy.addonide.setting.SettingEditorActivity" 
+            android:exported="false" >
+        </activity>
+        <activity 
+            android:name="com.mcyizy.addonide.setting.EditorCustomThemeActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- 代码编辑器 -->
+        <activity 
+            android:name="com.mcyizy.editor.CodeEditorActivity" 
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"  >
+        </activity>
+        <!-- 插件运行活动 -->
+        <activity 
+            android:name="com.mcyizy.addonide.plugin.ProxyActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        </activity>
+        <!-- 模块_崩溃日志活动 -->
+        <activity 
+            android:name="com.mcyizy.addonide.module.exceptionhandling.CrashActivity" 
+            android:exported="false">
+        </activity>
+        
+        <!-- AddonIDE 编辑器 -->
+        <activity 
+            android:name="com.mcyizy.editor2.MainActivity" 
+            android:exported="false">
+        </activity>
+        <activity 
+            android:name="com.mcyizy.editor2.ProjectActivity" 
+            android:exported="false">
+        </activity>
+        <!-- 测试 -->
+        <activity 
+            android:name="com.mcyizy.addonide.TestActivity" 
+            android:exported="false" >
+        </activity>
+        <!-- Title -->
+    </application>
+</manifest>

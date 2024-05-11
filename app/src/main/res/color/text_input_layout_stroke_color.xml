@@ -1,0 +1,7 @@
+ <!-- 边框颜色定义 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 当控件获得焦点时使用的颜色 -->
+    <item android:color="@color/colorEditorSelectBorder" android:state_focused="true"/>
+    <!-- 默认状态下使用的颜色 -->
+    <item android:color="@color/colorEditorBorder"/>
+</selector>

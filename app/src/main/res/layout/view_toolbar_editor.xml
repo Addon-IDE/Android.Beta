@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMainPrimary">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center|left">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/file_menu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_menu"
+                app:tint="@color/colorToolbarIcon"
+                android:layout_marginLeft="5dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center|left">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:textColor="@color/colorDefaultFont"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/position_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:0"
+                android:textColor="@color/colorDefaultHintFont"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:singleLine="true"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center|right">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <LinearLayout
+                android:id="@+id/toolbar_button1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/toolbar_button1_icon"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/ic_write"
+                    app:tint="@color/colorToolbarIcon" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/toolbar_button2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_run"
+                    app:tint="@color/colorToolbarIcon" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/toolbar_button3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_undo"
+                    app:tint="@color/colorToolbarIcon" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+           <LinearLayout
+                android:id="@+id/toolbar_button4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_redo"
+                    app:tint="@color/colorToolbarIcon" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/toolbar_menu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_menu2"
+                app:tint="@color/colorToolbarIcon"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

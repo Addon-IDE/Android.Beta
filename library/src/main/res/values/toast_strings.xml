@@ -1,0 +1,4 @@
+<resources>
+    <!-- Toasty -->
+    <string name="toast_message">Toast message</string>
+</resources>

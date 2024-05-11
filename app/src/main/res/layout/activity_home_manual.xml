@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVicePrimary"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:transitionName="transitions_help"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手册"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorDefaultFont"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Here is the description"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDefaultHintFont" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|right">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="20dp"
+                android:src="@android:mipmap/sym_def_app_icon" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="160dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/colorMainPrimary"
+                        android:gravity="center">
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text=""
+                            android:gravity="center|left"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textSize="15sp"
+                            android:hint="搜索"
+                            android:singleLine="true"
+                            android:id="@+id/search_editor" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|right">
+                
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/button_up"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_arrow_up"
+                                app:tint="@color/colorDefaultIcon2"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/button_search"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_search"
+                                app:tint="@color/colorDefaultIcon2" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginRight="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/button_add"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_add"
+                                app:tint="@color/colorDefaultIcon2" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/listview"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:divider="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

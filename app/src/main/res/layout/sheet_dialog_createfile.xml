@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建文件"
+                android:textColor="@color/colorDefaultFont"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="名称"
+                android:textColorHint="@color/colorDefaultHintFont"
+                app:helperText=""
+                style="?textInputOutlinedStyle"
+                android:enabled="true"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/text_input_layout_stroke_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/createfile_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/colorDefaultFont"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        
+        <HorizontalScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="none">
+            
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/tab_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/tab_a_1"
+                app:singleSelection="true"
+                app:selectionRequired="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_a_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Addons 文件"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_a_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="测试2"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_a_3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="测试3"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_a_4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="测试4"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </HorizontalScrollView>
+        
+        <HorizontalScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="none">
+            
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/tab_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/tab_1"
+                app:singleSelection="true"
+                app:selectionRequired="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="json"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="js"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tab_4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="mcfunction"
+                    android:textColor="@color/colorDefaultFont"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </HorizontalScrollView>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_create"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:text="创建"
+                app:cornerRadius="25dp"
+                app:backgroundTint="#505C90" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_no"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="取消"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorFontButton"
+                android:stateListAnimator="@null"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:cornerRadius="25dp"
+                app:rippleColor="#74767E"
+                app:strokeColor="#74767E"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

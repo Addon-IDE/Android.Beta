@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Entity",
+        "path": "data/minecraft/addons/Entity.mjson"
+    },
+    {
+        "name": "Entity2",
+        "path": "data/minecraft/addons/Entity2.mjson"
+    }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/colorMainPrimary">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center|left"
+        android:background="@color/colorMainPrimary">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorDefaultFont"
+            android:textSize="16sp"
+            android:id="@+id/title" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

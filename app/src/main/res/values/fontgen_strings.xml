@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_fontgen_info" translatable="false">关于</string>
+    <string name="string_fontgen_setting" translatable="false">设置</string>
+    <string name="string_fontgen_make" translatable="false">创建</string>
+    <string name="string_fontgen_license" translatable="false">测试</string>
+    <string name="string_fontgen_cancel" translatable="false">取消</string>
+    <string name="string_fontgen_confirm" translatable="false">确认</string>
+    <string name="string_fontgen_setting_title" translatable="false">设置样式</string>
+    <string name="string_fontgen_choose_ttf_file" translatable="false">选择字体文件</string>
+    <string name="string_fontgen_path_ttf_file" translatable="false">字体路径</string>
+    <string name="string_fontgen_find_ttf_file" translatable="false">查找</string>
+    <string name="string_fontgen_anti_alias" translatable="false">抗锯齿</string>
+    <string name="string_fontgen_only_korean" translatable="false">仅创建英文</string>
+    <string name="string_fontgen_image_live" translatable="false">字体图像实时更新</string>
+</resources>

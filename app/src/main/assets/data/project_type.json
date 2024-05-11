@@ -1,0 +1,18 @@
+[
+    {
+        "icon": "default.png",
+        "name": "默认类型",
+        "author": "Addon IDE",
+        "type": "default",
+        "describe": "默认类型为空白，没啥主要功能",
+        "url": "default_type.zip"
+    },
+    {
+        "icon": "minecraft.png",
+        "name": "Minecraft Addon",
+        "author": "Addon IDE",
+        "type": "minecraft_addon",
+        "describe": "Minecraft 附加包项目",
+        "url": "miecraft_addon.zip"
+    }
+]

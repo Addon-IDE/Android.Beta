@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <com.mcyizy.android.widget.ToolbarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorVicePrimary">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/colorMainPrimary">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorMainPrimary">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:orientation="vertical"
+                        android:gravity="center|left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常规"
+                            android:textColor="@color/colorDefaultHintFont"
+                            android:layout_marginLeft="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:title="字体大小"
+                            app:subtitle="编辑器的字体大小" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:title="Tab 宽度"
+                            app:subtitle="指定制表符代表的空格数" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:title="显示不可打印字符"
+                            app:subtitle="编辑器显示哪些不可打印字符" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:type="1"
+                            app:title="连体字"
+                            app:subtitle="启用或者禁用连体字" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:type="1"
+                            app:title="自动换行"
+                            app:subtitle="编辑器自动换行" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:type="1"
+                            app:title="启用放大镜"
+                            app:subtitle="选择文本时放大选中的文本" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:type="1"
+                            app:title="使用安全键盘"
+                            app:subtitle="编辑代码时使用密码安全键盘来输入" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:type="1"
+                            app:title="固定行数"
+                            app:subtitle="编辑器是否应在水平滚动时固定行号栏" />
+                        
+                        <com.mcyizy.addonide.setting.SettingListView
+                            android:id="@+id/setting_button9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:type="1"
+                            app:title="自动补全"
+                            app:subtitle="允许代码编辑器弹出自动补全窗口" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

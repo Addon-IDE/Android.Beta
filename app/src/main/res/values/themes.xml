@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- 主题 -->
+  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#3F51B5</item>
+        <item name="colorAccent">#EC407A</item>
+        
+  </style>
+
+</resources>

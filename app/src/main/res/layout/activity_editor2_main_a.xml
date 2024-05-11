@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/colorVicePrimary">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:gravity="center|left"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名称"
+                android:textColor="@color/colorDefaultFont"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附加包名称"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="My Project"
+                android:hint=""
+                android:singleLine="true"
+                android:id="@+id/editor_name"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:gravity="center|left"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者"
+                android:textColor="@color/colorDefaultFont"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附加包作者"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Addon IDE"
+                android:hint=""
+                android:singleLine="true"
+                android:id="@+id/editor_author"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:gravity="center|left"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本"
+                android:textColor="@color/colorDefaultFont"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附加包的版本"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="1, 0, 0"
+                android:hint=""
+                android:singleLine="true"
+                android:id="@+id/editor_version"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:gravity="center|left"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述"
+                android:textColor="@color/colorDefaultFont"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附加包的信息"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="This is a simple description."
+                android:hint=""
+                android:id="@+id/editor_describe"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="top|left"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:gravity="center|left"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:textColor="@color/colorDefaultFont"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编译器打包进去的内容"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="%help%"
+                android:hint=""
+                android:singleLine="true"
+                android:id="@+id/editor_other"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

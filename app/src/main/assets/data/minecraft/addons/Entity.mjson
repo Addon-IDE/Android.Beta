@@ -1,0 +1,24 @@
+{
+
+    fun ID() [
+    
+    ]
+    fun ID2() [
+    
+    ]
+    fun ID3() [
+    
+    ]
+    fun ID4() [
+    
+    ]
+    
+}
+[tip]
+ID=
+ID2=标题2
+ID3=标3
+[endtip]
+
+
+ID4=标题4 //这个是不行的

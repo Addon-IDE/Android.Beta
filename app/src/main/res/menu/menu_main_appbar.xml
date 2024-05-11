@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="@drawable/ic_home"
+        app:tooltipText="主页"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/menu_item2"
+        android:icon="@drawable/ic_help"
+        app:tooltipText="帮助"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/menu_item3"
+        android:icon="@drawable/ic_plugin"
+        app:tooltipText="插件"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/menu_item4"
+        android:icon="@drawable/ic_set"
+        app:tooltipText="设置"
+        app:showAsAction="always" />
+
+</menu>

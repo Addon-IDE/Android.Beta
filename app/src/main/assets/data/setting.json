@@ -1,0 +1,18 @@
+{
+    "NightMode": false,
+    "DayEditor": 0,
+    "NightEditor": 0,
+    "FontEditor": 1,
+    "CustomThemeEditor": false,
+    "CustomThemeEditorId": -1,
+    "CustomThemeEditorName": "",
+    "FontSizeEditor": 10,
+    "TabWidthEditor": 1,
+    "FlagsDrawEditor": [],
+    "SiameseWordEditor": false,
+    "WordWrapEditor": false,
+    "MagnifierEditor": true,
+    "SafetyInputEditor": false,
+    "FixedLineEditor": false,
+    "AutocompleteEditor": true
+}

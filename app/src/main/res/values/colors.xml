@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 -->
+    <color name="colorMainPrimary">#FFFFFF</color>
+    <!-- 副色调 -->
+    <color name="colorVicePrimary">#FAFAFA</color>
+    
+    <!-- 默认字体颜色 -->
+    <color name="colorDefaultFont">#000000</color>
+    <!-- 默认提示字体颜色 -->
+    <color name="colorDefaultHintFont">#757575</color>
+    <!-- 按钮字体颜色 -->
+    <color name="colorFontButton">#505C90</color>
+    
+    <!-- 图标颜色 -->
+    <color name="colorDefaultIcon">#000000</color>
+    <color name="colorDefaultIcon2">#000000</color>
+    
+    <!-- 工具栏图标颜色 -->
+    <color name="colorToolbarIcon">#000000</color>
+    <!-- 工具栏圆角颜色 -->
+    <color name="colorToolbarFillet">#F8F8FA</color>
+    
+    <!-- 编辑框边框颜色 -->
+    <color name="colorEditorBorder">#9E9E9E</color>
+    <!-- 编辑框选中边框颜色 -->
+    <color name="colorEditorSelectBorder">#3F51B5</color>
+    
+    <!-- 代码编辑器文件快捷栏图标 -->
+    <color name="colorCodeEditorShortcutIcon">#757575</color>
+    
+    <!-- 下拉菜单背景颜色 -->
+    <color name="colorBottomSheetBg">#FFFFFF</color>
+    
+    <!-- 红色 -->
+    <color name="red">#ff0000</color>
+    <!-- 灰色 -->
+    <color name="grey">#757575</color>
+    
+    
+    <!-- colorPrimary -->
+    <color name="colorPrimary">#FAFAFA</color>
+    
+    
+</resources>

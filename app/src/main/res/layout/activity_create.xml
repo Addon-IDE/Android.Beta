@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionName="transitions_create" >
+
+    <com.mcyizy.android.widget.ToolbarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorVicePrimary" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="75dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/colorMainPrimary" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@color/colorMainPrimary">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@mipmap/ic_launcher" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp" >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editor_name_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:hint="项目名称"
+                        android:textColorHint="@color/colorDefaultHintFont"
+                        app:helperText=""
+                        style="?textInputOutlinedStyle"
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+                        app:errorEnabled="true"
+                        app:boxStrokeColor="@color/text_input_layout_stroke_color" >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editor_name"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/colorDefaultFont"
+                            android:drawableStart="@drawable/ic_minecraft"
+                            android:text="" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editor_author_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:hint="项目作者"
+                        android:textColorHint="@color/colorDefaultHintFont"
+                        app:helperText=""
+                        style="?textInputOutlinedStyle"
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+                        app:errorEnabled="true"
+                        app:boxStrokeColor="@color/text_input_layout_stroke_color" >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editor_author"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/colorDefaultFont"
+                            android:drawableStart="@drawable/ic_image"
+                            android:text="" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editor_edition_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:hint="项目版本"
+                        android:textColorHint="@color/colorDefaultHintFont"
+                        app:helperText=""
+                        style="?textInputOutlinedStyle"
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+                        app:errorEnabled="true"
+                        app:boxStrokeColor="@color/text_input_layout_stroke_color" >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editor_edition"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/colorDefaultFont"
+                            android:drawableStart="@drawable/ic_v_circle"
+                            android:text="" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editor_describe_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:hint="项目描述"
+                        android:textColorHint="@color/colorDefaultHintFont"
+                        app:helperText=""
+                        style="?textInputOutlinedStyle"
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+                        app:errorEnabled="true"
+                        app:boxStrokeColor="@color/text_input_layout_stroke_color" >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editor_describe"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/colorDefaultFont"
+                            android:drawableStart="@drawable/ic_book"
+                            android:text="" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/select_template_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        style="?textInputOutlinedStyle"
+                        android:hint="创建类型"
+                        android:textColorHint="@color/colorDefaultHintFont"
+                        app:boxStrokeColor="@color/text_input_layout_stroke_color" >
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/select_template"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:dropDownWidth="wrap_content"
+                            android:inputType="none"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/colorDefaultFont"
+                            android:drawableStart="@drawable/ic_book"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="默认类型"
+                            android:textSize="15sp"
+                            android:transitionName="transitions_create_type" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp"
+            android:gravity="center|bottom">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_return"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="后退"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorFontButton"
+                        android:stateListAnimator="@null"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        app:cornerRadius="25dp"
+                        app:rippleColor="#74767E"
+                        app:strokeColor="#74767E"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|right">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:stateListAnimator="@null"
+                        android:text="创建"
+                        app:cornerRadius="25dp"
+                        app:backgroundTint="#505C90" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

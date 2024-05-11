@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:transitionName="transitions_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/file_drawer_layout">
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:background="@color/colorVicePrimary"
+            android:orientation="vertical">
+
+            <com.mcyizy.editor.ToolbarView
+                android:id="@+id/toolbar_view"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" />
+
+            <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:background="@color/colorMainPrimary"
+                android:orientation="vertical"
+                android:layout_marginTop="2px">
+
+                <HorizontalScrollView
+                    android:background="@color/colorMainPrimary"
+                    android:layout_height="40dp"
+                    android:layout_width="fill_parent"
+                    android:scrollbars="none">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:background="@color/colorMainPrimary"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:gravity="center|left"
+                        android:id="@+id/file_shortcut_list"
+                        android:focusableInTouchMode="false"
+                        app:tabGravity="fill"
+                        app:tabMode="scrollable"
+                        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
+                    </com.google.android.material.tabs.TabLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical">
+
+                    <io.github.rosemoe.sora.widget.CodeEditor
+                        android:id="@+id/code_editor_view"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <HorizontalScrollView
+                android:layout_height="40dp"
+                android:layout_width="fill_parent"
+                android:scrollbars="none"
+                android:background="@color/colorMainPrimary">
+
+                <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/symbols_list">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorMainPrimary"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:id="@+id/unopened_file_prompt"
+            android:layout_marginTop="52dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_unopened_file"
+                android:layout_marginTop="100dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前没有打开任何文件"
+                android:textColor="@color/colorDefaultHintFont"
+                android:layout_marginTop="45dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorMainPrimary"
+        android:layout_gravity="left">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/colorMainPrimary">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文件"
+                        android:textColor="@color/colorDefaultFont"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="@color/colorMainPrimary">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="left">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:gravity="center"
+                                android:id="@+id/up_button">
+                                
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_arrow_up"
+                                    app:tint="@color/colorDefaultIcon"
+                                    android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="45dp">
+
+                                <EditText
+                                    android:id="@+id/search_editor"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:text=""
+                                    android:hint="请输入搜索..."
+                                    android:singleLine="true"
+                                    android:background="@android:color/transparent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center|right">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:gravity="center"
+                                android:id="@+id/add_menu_button">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_add"
+                                    app:tint="@color/colorDefaultIcon"
+                                    android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:id="@+id/file_list_refresh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/file_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:divider="#000000ff" />
+
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/file_tree_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center|bottom">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorMainPrimary"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="测试" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
