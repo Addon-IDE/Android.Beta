@@ -6,6 +6,8 @@
 
 下载 `.zip` 文件：[123云盘](https://www.123pan.com/s/vhjA-lFPsH.html)
 
+加入QQ群：[1027458419](https://qm.qq.com/q/NWqz2YGAqQ)
+
 ---
 
 Java + Kotlin 混合开发
